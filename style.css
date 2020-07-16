@@ -1,0 +1,152 @@
+#slideshow {
+    position: relative;
+    width: 300px;
+    height: 510px;
+    padding: 10px;
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#slideshow > div > img {
+    border: 2px solid white;
+    box-shadow: 0 0 20px white;
+}
+h3 {
+    margin:5px 0;
+}
+
+.sliderContainer {
+    position: relative;
+
+
+}
+
+.slider {
+    width: 100%;
+   height: 100px;
+
+}
+
+.slick-slide {
+
+    color: white;
+    padding: 0px 0 350px;
+    font-size: 30px;
+    font-family: "Arial", "Helvetica";
+    text-align: center;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-dots {
+    bottom: -30px;
+}
+
+.slick-slide:nth-child(odd) {
+
+}
+
+.progressBarContainer {
+    position: absolute;
+    top: 700px;
+    width:300px;
+    left:40%;
+
+}
+
+.progressBarContainer div {
+    display: block;
+    width: 30%;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 5%;
+    float: left;
+    color: black;
+}
+
+.progressBarContainer div:last-child {
+    margin-right: 0;
+}
+
+.progressBarContainer div span.progressBar {
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: block;
+}
+
+.progressBarContainer div span.progressBar .inProgress {
+    background-color: rgba(255, 255, 255, 1);
+    width: 0%;
+    height: 4px;
+}
+* {
+    box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding: 64px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+}
+
+.column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+}
+
+.large-font {
+    font-size: 48px;
+}
+
+.xlarge-font {
+    font-size: 64px
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33 {
+        width: 100%;
+        text-align: center;
+    }
+    img {
+        margin: auto;
+    }
+}
